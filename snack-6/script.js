@@ -16,14 +16,13 @@ const zucchine = [
 const zucchineLunghe = []; 
 const zucchineAltro = []; 
 
-zucchine.forEach((verdura) => {
-if(verdura.weight > 15){
-  zucchineLunghe.push(verdura)
-} else if (verdura.weight < 15){
-  zucchineAltro.push(verdura)
+zucchine.forEach ((verdura) => {
+  console.log (verdura.length)
+  if(verdura.length > 15){
+    zucchineLunghe.push (verdura);
+} else if (verdura.length < 15){
+    zucchineAltro.push (verdura);
 }
-}
-)
+});
 
-console.log(zucchineLunghe)
-console.log(zucchineAltro)
+console.log(zucchineLunghe,zucchineAltro);
